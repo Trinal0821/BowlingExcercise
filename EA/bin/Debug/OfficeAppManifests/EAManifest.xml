@@ -19,7 +19,7 @@
   <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
   <DisplayName DefaultValue="EA" />
   <Description DefaultValue="EA"/>
-  <IconUrl DefaultValue="https://localhost:7256/Images/Icon64.png"/>
+  <IconUrl DefaultValue="https://localhost:7150/Images/Icon64.png"/>
 
   <SupportUrl DefaultValue="http://www.contoso.com" />
   <!-- Domains that will be allowed when navigating. For example, if you use ShowTaskpane and then have an href link, navigation will only be allowed if the domain is on this list. -->
@@ -41,7 +41,7 @@
 	<FormSettings>
 		<Form xsi:type="ItemRead">
 			<DesktopSettings>
-				<SourceLocation DefaultValue="https://localhost:7256/Home/TaskPane"/>
+				<SourceLocation DefaultValue="https://localhost:7150/Home/TaskPane"/>
 				<RequestedHeight>250</RequestedHeight>
 			</DesktopSettings>
 		</Form>
@@ -100,13 +100,13 @@
 
 		<Resources>
 			<bt:Images>
-				<bt:Image id="icon16" DefaultValue="https://localhost:7256/Images/Icon16.png"/>
-				<bt:Image id="icon32" DefaultValue="https://localhost:7256/Images/Icon32.png"/>
-				<bt:Image id="icon80" DefaultValue="https://localhost:7256/Images/Icon80.png"/>
+				<bt:Image id="icon16" DefaultValue="https://localhost:7150/Images/Icon16.png"/>
+				<bt:Image id="icon32" DefaultValue="https://localhost:7150/Images/Icon32.png"/>
+				<bt:Image id="icon80" DefaultValue="https://localhost:7150/Images/Icon80.png"/>
 			</bt:Images>
 			<bt:Urls>
-				<bt:Url id="functionFile" DefaultValue="https://localhost:7256/FunctionFile"/>
-				<bt:Url id="messageReadTaskPaneUrl" DefaultValue="https://localhost:7256/Home/TaskPane"/>
+				<bt:Url id="functionFile" DefaultValue="https://localhost:7150/FunctionFile"/>
+				<bt:Url id="messageReadTaskPaneUrl" DefaultValue="https://localhost:7150/Home/TaskPane"/>
 			</bt:Urls>
 			<bt:ShortStrings>
 				<bt:String id="groupLabel" DefaultValue="My Add-in Group"/>

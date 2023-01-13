@@ -4,39 +4,172 @@
     // The Office initialize function must be run each time a new page is loaded
     Office.initialize = function (reason) {
         $(document).ready(function () {
-        
-            $("#get-from").click(getFrom);
+
+            /*$("#get-from").click(getFrom);
+            console.log("GOT THE FROM, Subject and body");
+
+            $.ajax({
+                type: "POST",
+                url: "/Home/Run",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (msg) {
+                    console.log("the list", msg)
+                },
+                error: function (req, status, error) {
+                    console.log(":(")
+                }
+            });*/
+
+            sendData();
+
         });
     };
 
-    function getFrom() {
+    async function sendData() {
 
-        var jsonstring = "";
+        // $("#get-from").click(getFrom);
+        //console.log("GOT THE FROM, Subject and body");
 
-        //Get the from and append the client's name
-        const msgFrom = Office.context.mailbox.item.from;
-        jsonstring += "FROM: " + msgFrom.displayName + ";";
+        /*        const temp = async () => {
+                    const body = await getBody();
+                    console.log("HUZZAH "  + body);
+                }*/
+        //  console.log("THIS IS THE BODY HAHHAHA: " + body);
 
-        //Get the subject and append it
-        jsonstring += "SUBJECT: " + Office.context.mailbox.item.subject + ";";
+        //var parsedJson = await getFrom();
+        // getBody().then(function (body) {console.log(body) });
+        //var body = getBody();
+       // console.log(body);
+        getFrom();
+        // console.log("This is from the method call" + parsedJson);   
 
-        let body = '';
-        Office.context.mailbox.item.body.getAsync(
+        /*        axios.get("/Home/testing", {
+                    params: JSON.stringify(parsedJson)
+                })
+                    .then(res => {
+                        console.log(res);
+                    });*/
+
+
+        /*        axios.get("/Home/testing", {
+                    params: {
+                        from: "Trina",
+                        subject: "the subject",
+                        body: "the body"
+                    }
+                })
+                    .then(res => {
+                        console.log(res);
+                    });
+        */
+
+
+
+        /*  const data = { from: 'example' };
+  
+          fetch('/Home/testing', {
+              method: 'GET', // or 'PUT'
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(data),
+          })
+              .then((response) => response.json())
+              .then((data) => {
+                  console.log('Success:', data);
+              })
+              .catch((error) => {
+                  console.error('Error:', error);
+              });*/
+
+        /*      $.ajax({
+                  type: "POST",
+                  url: "/Home/testing",
+                 // dataType: "json",
+                  contentType: "application/json",
+                  dataType: 'json',
+                  data: JSON.stringify(testing),
+                  success: function (msg) {
+                     // console.log("HEY O FROM SENDDATa");
+                      console.log(msg);
+                     // console.log("From: ", msg.from + "Subject: " + msg.subject + "body: " + msg.body)
+                     // console.log("data sent", getFrom())
+                  },
+                  error: function (req, status, error) {
+                      console.log(":(")
+                      console.log(error);
+                  }
+              });*/
+    }
+
+    async function getBody() {
+        let body = await 'FILLER : ';
+        await Office.context.mailbox.item.body.getAsync(
             "text",
             function (result) {
                 if (result.status === Office.AsyncResultStatus.Succeeded) {
                     body = result.value;
-                    jsonstring += body + ";"
 
-                    jsonstring = JSON.stringify(jsonstring);
-                    console.log(jsonstring);
+                    console.log(body);
 
-                    var split = jsonstring.split(";");
-                    console.log(split);
+
+                    //  jsonstring += body + ";"
+
+                    // jsonstring = JSON.stringify(jsonstring);
+                    // return jsonstring
+                }
+                else {
+                    console.log(result.status);
                 }
             }
         )
-       
+
+        console.log("This is the  body inside the body " + body);
+        return body;
+    }
+
+    async function getFrom() {
+
+        console.log("I'm HERE HSHSH");
+        //Get the from and append the client's name
+        const msgFrom = Office.context.mailbox.item.from;
+        var fromField = msgFrom.displayName + ";";
+
+        //Get the subject and append it
+        var subjectField = Office.context.mailbox.item.subject + ";";
+
+        console.log("Got subject and from");
+
+        await Office.context.mailbox.item.body.getAsync(
+            "text",
+            function (result) {
+                if (result.status === Office.AsyncResultStatus.Succeeded) {
+                    var bodyField = result.value;
+
+                    console.log(bodyField);
+
+                    axios.get("/Home/testing", {
+                        params:
+                        {
+                            from: fromField,
+                            subject: subjectField,
+                            body: bodyField
+                           }
+                    })
+                        .then(res => {
+                            console.log(res);
+                        });
+
+                    //jsonstring = JSON.stringify(jsonstring);
+                    // return jsonstring
+                }
+                else {
+                    console.log(result.status);
+                }
+            }
+        )
+
     }
 })();
 

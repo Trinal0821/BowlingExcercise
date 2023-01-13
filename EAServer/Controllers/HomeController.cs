@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging.Abstractions;
-/*using OutlookExecutable;*/
 using System.Diagnostics;
 using EAServer.Models;
 using Newtonsoft;
 using Newtonsoft.Json;
 using EAServer.Models;
+using OutlookExecutable;
+using System.Web.Helpers;
 
 namespace EAServer.Controllers
 {
@@ -38,6 +39,31 @@ namespace EAServer.Controllers
         public IActionResult Privacy()
         {
             return View();
+        }
+
+        /*        public IActionResult testing()
+                {
+                    changetitle
+                }*/
+
+       [HttpGet]
+        public IActionResult testing( string from, string subject, string body)
+        {
+            //NLP nlp = new NLP();
+            ///nlp.execute(from, subject, body);
+            ///
+
+            var email = from;
+            
+            return Content("HEY O FROM THE OTHER SIIDE" + from + " ---" + subject + "---"  + body);
+
+           // return Json (new { status = "ok" } );
+
+            //return Content(from);
+
+            //return Content(from + ";" + subject + ";" + body);
+
+            //   return Content("got it");
         }
 
         public IActionResult Run()
