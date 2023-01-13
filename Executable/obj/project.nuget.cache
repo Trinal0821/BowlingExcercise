@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "XDOrNK35+0xGfIcvMTm6XwgY8Bnqk0gM2Mj/jbdp1sIg8H3dDid86NS2j5WF23sN8QHCxWzJU1sXFXbN14bcNA==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\trina\\Downloads\\executive-assistants-nlp-and-classifier (2)\\executive-assistants-nlp-and-classifier\\Executable\\Executable.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\trina\\Downloads\\executive-assistants-nlp-and-classifier (2)\\executive-assistants-nlp-and-classifier\\OutlookExecutable\\OutlookAddLibray.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\trina\\Downloads\\executive-assistants-nlp-and-classifier (2)\\executive-assistants-nlp-and-classifier\\OutlookExecutable\\OutlookAddLibray.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
