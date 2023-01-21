@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UNfznPg7UlBW0FJVlVLdXlud244G2UTDaorAmhEhtcQ=",
+  "Hash": "A5op1JZ/uTwDzdC2zIneuwn21WesnjW0UROEVmBtWZw=",
   "Source": "EAServer",
   "BasePath": "_content/EAServer",
   "Mode": "Default",
@@ -102,12 +102,12 @@
       "OriginalItemSpec": "wwwroot\\css\\MessageRead.css"
     },
     {
-      "Identity": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\css\\Settings.css",
       "SourceId": "EAServer",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\",
       "BasePath": "_content/EAServer",
-      "RelativePath": "css/site.css",
+      "RelativePath": "css/Settings.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -116,7 +116,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\site.css"
+      "OriginalItemSpec": "wwwroot\\css\\Settings.css"
     },
     {
       "Identity": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\favicon.ico",
@@ -221,6 +221,40 @@
       "OriginalItemSpec": "wwwroot\\Images\\logo.png"
     },
     {
+      "Identity": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\Images\\settings.png",
+      "SourceId": "EAServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\",
+      "BasePath": "_content/EAServer",
+      "RelativePath": "Images/settings.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\settings.png"
+    },
+    {
+      "Identity": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\js\\EmailContent.js",
+      "SourceId": "EAServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\",
+      "BasePath": "_content/EAServer",
+      "RelativePath": "js/EmailContent.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\EmailContent.js"
+    },
+    {
       "Identity": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\js\\FunctionFile.js",
       "SourceId": "EAServer",
       "SourceType": "Discovered",
@@ -270,23 +304,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\MessageRead.js"
-    },
-    {
-      "Identity": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\js\\site.js",
-      "SourceId": "EAServer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\",
-      "BasePath": "_content/EAServer",
-      "RelativePath": "js/site.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
       "Identity": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

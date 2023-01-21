@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\Images\\logo.png"
     },
     {
+      "Id": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\Images\\settings.png",
+      "PackagePath": "staticwebassets\\Images\\settings.png"
+    },
+    {
       "Id": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\css\\Button.css",
       "PackagePath": "staticwebassets\\css\\Button.css"
     },
@@ -37,12 +41,16 @@
       "PackagePath": "staticwebassets\\css\\MessageRead.css"
     },
     {
-      "Id": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\css\\Settings.css",
+      "PackagePath": "staticwebassets\\css\\Settings.css"
     },
     {
       "Id": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\js\\EmailContent.js",
+      "PackagePath": "staticwebassets\\js\\EmailContent.js"
     },
     {
       "Id": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\js\\FunctionFile.js",
@@ -55,10 +63,6 @@
     {
       "Id": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\js\\MessageRead.js",
       "PackagePath": "staticwebassets\\js\\MessageRead.js"
-    },
-    {
-      "Id": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
       "Id": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\lib\\bootstrap\\LICENSE",

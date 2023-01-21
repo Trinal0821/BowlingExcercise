@@ -14,11 +14,11 @@
 
   <!--Version. Updates from the store only get triggered if there is a version change. -->
   <Version>1.0.0.0</Version>
-  <ProviderName>[Provider name]</ProviderName>
+  <ProviderName>Team Executive Assistant</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
-  <DisplayName DefaultValue="EA" />
-  <Description DefaultValue="EA"/>
+  <DisplayName DefaultValue="Executive Assistant" />
+  <Description DefaultValue="Executive Assistant"/>
   <IconUrl DefaultValue="https://localhost:7150/Images/Icon64.png"/>
 
   <SupportUrl DefaultValue="http://www.contoso.com" />
@@ -73,6 +73,7 @@
 							<!-- Up to 6 Groups added per Tab -->
 							<Group id="msgReadGroup">
 								<Label resid="groupLabel" />
+								
 								<!-- Launch the add-in : task pane button -->
 								<Control xsi:type="Button" id="msgReadOpenPaneButton">
 									<Label resid="paneReadButtonLabel" />
@@ -89,6 +90,24 @@
 										<SourceLocation resid="messageReadTaskPaneUrl" />
 									</Action>
 								</Control>
+
+								<!-- Launch the add-in : task pane button -->
+								<Control xsi:type="Button" id="SettingOpenTaskPane">
+									<Label resid="settingTitle" />
+									<Supertip>
+										<Title resid="paneReadSuperTipTitle" />
+										<Description resid="paneReadSuperTipDescription" />
+									</Supertip>
+									<Icon>
+										<bt:Image size="16" resid="icon16" />
+										<bt:Image size="32" resid="icon32" />
+										<bt:Image size="80" resid="icon80" />
+									</Icon>
+									<Action xsi:type="ShowTaskpane">
+										<SourceLocation resid="SettingTaskPaneUrl" />
+									</Action>
+								</Control>
+								
 								<!-- Go to http://aka.ms/ButtonCommands to learn how to add more Controls: ExecuteFunction and Menu -->
 							</Group>
 						</OfficeTab>
@@ -107,12 +126,14 @@
 			<bt:Urls>
 				<bt:Url id="functionFile" DefaultValue="https://localhost:7150/FunctionFile"/>
 				<bt:Url id="messageReadTaskPaneUrl" DefaultValue="https://localhost:7150/Home/TaskPane"/>
+				<bt:Url id="SettingTaskPaneUrl" DefaultValue="https://localhost:7150/Home/Settings"/>
 			</bt:Urls>
 			<bt:ShortStrings>
-				<bt:String id="groupLabel" DefaultValue="My Add-in Group"/>
+				<bt:String id="groupLabel" DefaultValue="Executive Assistant Add-In"/>
 				<bt:String id="customTabLabel"  DefaultValue="My Add-in Tab"/>
 				<bt:String id="paneReadButtonLabel" DefaultValue="Display all properties"/>
 				<bt:String id="paneReadSuperTipTitle" DefaultValue="Get all properties"/>
+				<bt:String id="settingTitle" DefaultValue="Settings"/>
 			</bt:ShortStrings>
 			<bt:LongStrings>
 				<bt:String id="paneReadSuperTipDescription" DefaultValue="Opens a pane displaying all available properties. This is an example of a button that opens a task pane."/>
