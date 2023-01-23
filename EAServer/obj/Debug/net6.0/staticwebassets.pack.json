@@ -65,6 +65,10 @@
       "PackagePath": "staticwebassets\\js\\MessageRead.js"
     },
     {
+      "Id": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\js\\SetTagColors.js",
+      "PackagePath": "staticwebassets\\js\\SetTagColors.js"
+    },
+    {
       "Id": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

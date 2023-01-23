@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "A5op1JZ/uTwDzdC2zIneuwn21WesnjW0UROEVmBtWZw=",
+  "Hash": "m/N8lZOZdHF5puUQK8MaIGXhnXtgDB4BUH1JeM7I9G4=",
   "Source": "EAServer",
   "BasePath": "_content/EAServer",
   "Mode": "Default",
@@ -304,6 +304,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\MessageRead.js"
+    },
+    {
+      "Identity": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\js\\SetTagColors.js",
+      "SourceId": "EAServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\",
+      "BasePath": "_content/EAServer",
+      "RelativePath": "js/SetTagColors.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\SetTagColors.js"
     },
     {
       "Identity": "C:\\Users\\trina\\source\\repos\\EAServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
