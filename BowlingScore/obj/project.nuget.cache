@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "v/GjdypKCWEvRbOf8/QOSpjNTCxiJJyd4HQM4ZXbMoDvghOae+axi23NBcFe8jjTNaKYKLJUWh6178CImFEioA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\trina\\source\\repos\\BowlingScore\\BowlingScore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\trina\\.nuget\\packages\\mstest.testframework\\3.0.2\\mstest.testframework.3.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
